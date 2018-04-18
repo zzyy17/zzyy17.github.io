@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhouyongpu.top/"/>
-  <updated>2018-04-18T15:18:32.715Z</updated>
+  <updated>2018-04-18T15:25:30.229Z</updated>
   <id>http://zhouyongpu.top/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>testabout</title>
+    <link href="http://zhouyongpu.top/2018/04/18/testabout/"/>
+    <id>http://zhouyongpu.top/2018/04/18/testabout/</id>
+    <published>2018-04-18T15:24:28.000Z</published>
+    <updated>2018-04-18T15:25:30.229Z</updated>
+    
+    <content type="html"><![CDATA[<p>this is a test!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;this is a test!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="about" scheme="http://zhouyongpu.top/categories/about/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://zhouyongpu.top/2018/04/18/test/"/>
+    <id>http://zhouyongpu.top/2018/04/18/test/</id>
+    <published>2018-04-18T15:22:41.000Z</published>
+    <updated>2018-04-18T15:23:24.192Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to my second page</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to my second page&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="work" scheme="http://zhouyongpu.top/tags/work/"/>
+    
+      <category term="life" scheme="http://zhouyongpu.top/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>about</title>
