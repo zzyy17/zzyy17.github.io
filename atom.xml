@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhouyongpu.top/"/>
-  <updated>2018-04-18T15:25:30.229Z</updated>
+  <updated>2018-04-18T15:32:09.137Z</updated>
   <id>http://zhouyongpu.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://zhouyongpu.top/2018/04/18/testabout/"/>
     <id>http://zhouyongpu.top/2018/04/18/testabout/</id>
     <published>2018-04-18T15:24:28.000Z</published>
-    <updated>2018-04-18T15:25:30.229Z</updated>
+    <updated>2018-04-18T15:32:09.137Z</updated>
     
     <content type="html"><![CDATA[<p>this is a test!</p>]]></content>
     
@@ -35,8 +35,8 @@
     
     </summary>
     
-      <category term="about" scheme="http://zhouyongpu.top/categories/about/"/>
     
+      <category term="about" scheme="http://zhouyongpu.top/tags/about/"/>
     
   </entry>
   
