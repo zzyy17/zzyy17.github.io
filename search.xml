@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>test</title>
+      <link href="/2018/04/18/test/"/>
+      <url>/2018/04/18/test/</url>
+      <content type="html"><![CDATA[<p>Welcome to my second page</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> work </tag>
+            
+            <tag> life </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/04/18/hello-world/"/>
+      <url>/2018/04/18/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">If you are a friend,just ask me!</h3><script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-group"> <input type="password" class="form-control" id="pass" aria-label="Enter the password." /> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div>]]></content>
+    </entry>
+    
+  
+</search>
