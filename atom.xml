@@ -46,7 +46,7 @@
     <link href="http://zhouyongpu.top/2018/04/18/test/"/>
     <id>http://zhouyongpu.top/2018/04/18/test/</id>
     <published>2018-04-18T15:22:41.000Z</published>
-    <updated>2018-04-19T09:01:59.405Z</updated>
+    <updated>2018-04-19T09:08:32.789Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to my second page</p>]]></content>
     
@@ -60,9 +60,9 @@
     
     </summary>
     
-      <category term="work" scheme="http://zhouyongpu.top/categories/work/"/>
+      <category term="工作" scheme="http://zhouyongpu.top/categories/%E5%B7%A5%E4%BD%9C/"/>
     
-      <category term="life" scheme="http://zhouyongpu.top/categories/work/life/"/>
+      <category term="生活" scheme="http://zhouyongpu.top/categories/%E5%B7%A5%E4%BD%9C/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="test" scheme="http://zhouyongpu.top/tags/test/"/>
