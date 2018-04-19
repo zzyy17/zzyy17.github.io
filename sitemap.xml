@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhouyongpu.top/2018/04/19/hello-world/</loc>
+    
+    <lastmod>2018-04-19T07:28:36.456Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhouyongpu.top/about/index.html</loc>
     
     <lastmod>2018-04-19T05:26:56.885Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://zhouyongpu.top/2018/04/18/test/</loc>
     
     <lastmod>2018-04-18T15:23:24.192Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhouyongpu.top/2018/04/18/hello-world/</loc>
-    
-    <lastmod>2018-04-18T13:17:20.798Z</lastmod>
     
   </url>
   
