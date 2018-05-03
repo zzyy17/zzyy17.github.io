@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Spencer&#39;s Blog">
 <meta property="og:description" content="易读易写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-03T08:20:02.523Z">
+<meta property="og:updated_time" content="2018-05-03T08:24:29.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown - 语法说明">
 <meta name="twitter:description" content="易读易写">
@@ -352,13 +352,18 @@
 <p>你必须要把网址转换写为：</p>
 <p><a href="http://images.google.com/images?num=30&amp;q=larry+bird" target="_blank" rel="noopener">http://images.google.com/images?num=30&amp;q=larry+bird</a></p>
 <p>才能放到链接标签的 href 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。</p>
-<p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 &amp; 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 \&amp;。</p>
-<p>所以你如果要在文档中插入一个版权符号©，你可以这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;copy;</span><br></pre></td></tr></table></figure></p>
-<p>Markdown 会保留它不动。而若你写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AT&amp;T</span><br></pre></td></tr></table></figure></p>
-<p>Markdown 就会将它转为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AT&amp;amp;T</span><br></pre></td></tr></table></figure></p>
-<p>类似的状况也会发生在 &lt; 符号上，因为 Markdown 允许 兼容 HTML ，如果你是把 &lt; 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 &lt; 5</span><br></pre></td></tr></table></figure></p>
-<p>Markdown 将会把它转换为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 &amp;lt; 5</span><br></pre></td></tr></table></figure></p>
-<p>不过需要注意的是，code 范围内，不论是行内还是区块， &lt; 和 &amp; 两个符号都一定会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code (和 HTML 相对而言， HTML 语法中，你要把所有的 &lt; 和 &amp; 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。)</p>
+<p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 &amp; 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 <code>&amp;amp;</code>。</p>
+<p>所以你如果要在文档中插入一个版权符号©，你可以这样写：</p>
+<pre><code>&amp;copy;
+</code></pre><p>Markdown 会保留它不动。而若你写：</p>
+<pre><code>AT&amp;T
+</code></pre><p>Markdown 就会将它转为：</p>
+<pre><code>AT&amp;amp;T
+</code></pre><p>类似的状况也会发生在 &lt; 符号上，因为 Markdown 允许 兼容 HTML ，如果你是把 &lt; 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：</p>
+<pre><code>4 &lt; 5
+</code></pre><p>Markdown 将会把它转换为：</p>
+<pre><code>4 &amp;lt; 5
+</code></pre><p>不过需要注意的是，code 范围内，不论是行内还是区块， &lt; 和 &amp; 两个符号都一定会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code (和 HTML 相对而言， HTML 语法中，你要把所有的 &lt; 和 &amp; 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。)</p>
 <h1 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h1><h1 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1>
       
     </div>
@@ -370,7 +375,7 @@
         <p><span>本文标题:</span><a href="/2018/04/23/Markdown-语法说明/">Markdown - 语法说明</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Spencer Chow</a></p>
         <p><span>发布时间:</span>2018-04-23, 15:26:04</p>
-        <p><span>最后更新:</span>2018-05-03, 16:20:02</p>
+        <p><span>最后更新:</span>2018-05-03, 16:24:29</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/04/23/Markdown-语法说明/" title="Markdown - 语法说明">http://zhouyongpu.top/2018/04/23/Markdown-语法说明/</a>
             <span class="copy-path" data-clipboard-text="原文: http://zhouyongpu.top/2018/04/23/Markdown-语法说明/　　作者: Spencer Chow" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
