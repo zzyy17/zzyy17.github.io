@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Spencer&#39;s Blog">
 <meta property="og:description" content="易读易写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-03T07:59:11.267Z">
+<meta property="og:updated_time" content="2018-05-03T08:12:55.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown - 语法说明">
 <meta name="twitter:description" content="易读易写">
@@ -342,9 +342,24 @@
 <p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
 <p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
 <p>要制约的只有一些 HTML 区块元素――比如 &lt;div>、&lt;table>、&lt;pre>、&lt;p> 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &lt;p> 标签。</p>
-<p>例子如下，在 Markdown 文件里加上一段 HTML 表格：<br>这是一个普通段落。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;Foo&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">`</span><br></pre></td></tr></table></figure></p>
-<p>这是另一个普通段落。</p>
-<h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><h1 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h1><h1 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1>
+<p>例子如下，在 Markdown 文件里加上一段 HTML 表格：<br>这是一个普通段落。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;Foo&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line"></span><br><span class="line">这是另一个普通段落。</span><br></pre></td></tr></table></figure></p>
+<p>请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的<em>强调</em>会没有效果。</p>
+<p>HTML 的区段（行内）标签如 &lt;span>、&lt;cite>、&lt;del> 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 <a> 或 <img> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</a></p>
+<p>和处在 HTML 区块标签间不同，Markdown 语法在 HTML 区段标签间是有效的。</p>
+<h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><p>在 HTML 文件中，有两个字符需要特殊处理： &lt; 和 &amp; 。 &lt; 符号用于起始标签，&amp; 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 &lt; 和 &amp;。</p>
+<p>&amp; 字符尤其让网络文档编写者受折磨，如果你要打「AT&amp;T」 ，你必须要写成「AT&amp;T」。而网址中的 &amp; 字符也要转换。比如你要链接到：</p>
+<p><a href="http://images.google.com/images?num=30&amp;q=larry+bird" target="_blank" rel="noopener">http://images.google.com/images?num=30&amp;q=larry+bird</a></p>
+<p>你必须要把网址转换写为：</p>
+<p><a href="http://images.google.com/images?num=30&amp;q=larry+bird" target="_blank" rel="noopener">http://images.google.com/images?num=30&amp;q=larry+bird</a></p>
+<p>才能放到链接标签的 href 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。</p>
+<p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 &amp; 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 &amp;。</p>
+<p>所以你如果要在文档中插入一个版权符号©，你可以这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;copy;</span><br></pre></td></tr></table></figure></p>
+<p>Markdown 会保留它不动。而若你写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AT&amp;T</span><br></pre></td></tr></table></figure></p>
+<p>Markdown 就会将它转为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AT&amp;amp;T</span><br></pre></td></tr></table></figure></p>
+<p>类似的状况也会发生在 &lt; 符号上，因为 Markdown 允许 兼容 HTML ，如果你是把 &lt; 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 &lt; 5</span><br></pre></td></tr></table></figure></p>
+<p>Markdown 将会把它转换为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 &amp;lt; 5</span><br></pre></td></tr></table></figure></p>
+<p>不过需要注意的是，code 范围内，不论是行内还是区块， &lt; 和 &amp; 两个符号都一定会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code (和 HTML 相对而言， HTML 语法中，你要把所有的 &lt; 和 &amp; 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。)</p>
+<h1 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h1><h1 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1>
       
     </div>
     
@@ -355,7 +370,7 @@
         <p><span>本文标题:</span><a href="/2018/04/23/Markdown-语法说明/">Markdown - 语法说明</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Spencer Chow</a></p>
         <p><span>发布时间:</span>2018-04-23, 15:26:04</p>
-        <p><span>最后更新:</span>2018-05-03, 15:59:11</p>
+        <p><span>最后更新:</span>2018-05-03, 16:12:55</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/04/23/Markdown-语法说明/" title="Markdown - 语法说明">http://zhouyongpu.top/2018/04/23/Markdown-语法说明/</a>
             <span class="copy-path" data-clipboard-text="原文: http://zhouyongpu.top/2018/04/23/Markdown-语法说明/　　作者: Spencer Chow" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
