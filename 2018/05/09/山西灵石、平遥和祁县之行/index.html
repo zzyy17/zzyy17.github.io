@@ -35,7 +35,7 @@
 
 
 
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
 
 
 
@@ -74,7 +74,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
@@ -98,7 +98,7 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
+            <img src="/images/avatar.jpg" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/">Spencer Chow</a></h1>
@@ -108,6 +108,13 @@
         <p class="header-subtitle">为学日益，为道日损，知行合一</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -172,11 +179,19 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa 新浪微博" href="/sina weibo" title="新浪微博"></a>
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 豆瓣" href="/douban" title="豆瓣"></a>
+                            
+                                <a class="fa 简书" href="/jianshu" title="简书"></a>
+                            
+                                <a class="fa 网易云音乐" href="/netease" title="网易云音乐"></a>
+                            
+                                <a class="fa Google" href="/www.google.cn.hk" title="Google"></a>
                             
                         </ul>
                     </nav>
@@ -208,7 +223,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">专注于前端</div>
+                    <div id="js-aboutme">开心工作，认真生活</div>
                 </section>
                 
             </div>
@@ -225,7 +240,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
+                <img src="/images/avatar.jpg" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Spencer Chow</a></h1>
@@ -250,11 +265,19 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa 新浪微博" target="_blank" href="/sina weibo" title="新浪微博"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 豆瓣" target="_blank" href="/douban" title="豆瓣"></a>
+                            
+                                <a class="fa 简书" target="_blank" href="/jianshu" title="简书"></a>
+                            
+                                <a class="fa 网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a>
+                            
+                                <a class="fa Google" target="_blank" href="/www.google.cn.hk" title="Google"></a>
                             
                         </ul>
             </nav>
@@ -306,7 +329,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">Please enter the password to read.</h3><div id="security"> <div style="position:relative;display:table;border-collapse:separate;"> <input style="height:24px;" type="password" id="pass"> <button style="height:28px;width:100px;z-index:2;margin-left:30px;display:inline-block;" type="button" onclick="decryptAES()">Decrypt</button> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+5RIcLMnNS/RIIhsod2c/4nzybbGeFsFPAmEw3jibXOBIyt+7cgmsbl2StvezCSDEmC5mOoVr0LpH6vh2/nV5iQbiwq2tu9TY3eYKoR8BWAwyflC+oWMQiwXOrt4O43gkjE+dophn9gusrViH+H24PqShcXdaDz8lbVB5uV0hyiDrnIehM2FgU/Me8vp8gZCKydrmL8EE4bPF/MlA4Tnnw6gnWMao7pzPhvvO/7pAdVg45xcs2DplIM39vzaxR3uYvP2hsmN9FpENtIQ4z7NKHBwjvVZr8mtoBXp99q6u8KfH40bknctWMFKhHTOnxvHvPaYl/LA3WZrIk1db8q3C671iCTz+hQsFQ7TnTvqGONSh0dYSXLHcBGIoK/N4H3Dls/Xk0ShwLBmx6rUANI00Sr72tni3ZpPcpj2FrF9XErOtJW0bvkH9+cMUHBjUzLPEXK/gZS3BqF8WIyn8u1z+pcuZL9jIqgDO3K95LUhnvYoAfj/cH5L2AbTphbPmKNyre4oFgCimGyd0+sxmyR1kmK7WJrSuUTyNj9OXb4Ho6G/yiaKQVZ5Im+HeO59KiLIcKH9PvA58mQBG9ddWiMpnfQcOzhr+V6aiXZADb2Mit47T/Rjg4b8aV9x7/ltgLDN35uKeKewJkRIjNIrK0UhEE8Q18CUJab5xA0lTBahapPYQb4rmwkoayaNsOqu2SSWTU/aaLAppPC1OEJh1iEdMZOoo8O0/BFtmmatKaeF0b3QXVBaMyMtYrqbT5+JeBIThyfn8kEkHilCS9wX8yrcWBYqDRa6TXLzKN86lun5hu9vehYmEo9SM2qPygcGxKNXy2IxtxEF6/lwdcUQoVzA58XFDo28UT4pApzK2mHZaUks/t0KEbM9sHfgYzKtmNBb/Z7q2j+L46d+F8DmBNeRbwFliAcVYzoCsQDa/6oqsjND3SGbLLvcPR0cxR/T7fL+zqKkBFrpr1UXa9juRHuYGK76mtGAMQNU8slz3ZDWWFXiVxt2CQ785totS0GW67nyJgM9cSZ1lXMEREU42OymAYf6lo2a0poBH3QabAX4eV/xk8ivIxJivW59wOPZviroczUdvbrZT8VUhqVkLRAL9xnYrs8LpxklL5UYGSojN+IRFMdh2Ts8liDvvJq5xLaLj0tXncwCC4heoCrHAHCN8DXg9H3gLBv9jxEzeKwOfFcKW5Bq2e9sU/nH0USAFSOcvvVDJb3rnCaPoI6ctoXv1mNt/JA1lcmxOlISI+f0GWX4j7sE6s2+EnbUQjI9RLEjvP+EYF9cbylufbWVgUxw4XaZm5D5ogZqqVt5OEbS4cw1cboKLERjkhlkCEyGd0oxie8FZ6ps4272Ig9AB03EoLameI/fUJkn0K/bOsouK4JYs5jJQAgRU9wDqlVOlpAiMfycYL15nhtsrDNFrqkDxusOyRsILiIj4n/uaTfJQQluAvE6w7LzoFehnpXKKSME8Py5Cf+gg6q0h5i1GRa0jUUkgQAfJyPp34HSwSvk2j2UOctazbIqcjY14kX9YGXjodPTwYfPhF3i52D/0jbnGXbW0WW/ZcdBAudmWEx+dl730hy1ytqtdv478v0k0IXouen9M+8iWOqB80rzm8wE9TVKlAVf4LdnCEfnO5F3TOU5tNsTuV4i2M6G19pzveG8JbOOtOSPI+JkpEmPmeSAKtfF6pFDgm1X4O+w+lzccC+LScu7X1sOagYC9PiUMcPH1qEULJcf8FKoftlE7dNUpXW5BsTRGB5hq3peA8CKqbHIIFsh879hHPYt99vkgH3+8ale5rjQS0ZcljKAb1qfC2CSaUpSSQg+M= </div>
+        <script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">Please enter the password to read.</h3><div id="security"> <div style="position:relative;display:table;border-collapse:separate;"> <input style="height:24px;" type="password" id="pass"> <button style="height:28px;width:100px;z-index:2;margin-left:30px;display:inline-block;" type="button" onclick="decryptAES()">Decrypt</button> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+1TUnMru57cXDv+0HLY+4crFE4dmnWocvgFkG0peUXrPm1WUveEzs1zyheQ25qLZPw7JxV87fp427xOya/l+xiW7yPgZF5TQFJoxuqoLirKLMu9IChIcKh3BQo42g/VjSldd2d53ZptA5T/p0pOH9eFAx8X0n0MsDFzh3/7qAq3Sn+MAL9wDo6A0llNrCrl8vmhqFBR/CdogJCW2rrQqI7k5yBschzzmiFzWezO+NbWQdpW8SQLUzFQG/c+ms4roFytCydv3r1EmuBvlWBofTyq4XoWlGM7TdwYKb+B9IFVP7jocoQS9HYGXqv1qW9/l6JQ2vytiAqxz8oaUbmqEJtR55PHzK5b3+HiWAIUYy3GmTw4BEbOtbVcBcdNA2PTsDF1dXZTf5gsrzxhjZup5TK7NrldNbfSOXvXkArpZMwbRHk3WlcQ6Q1iKvNLcVJzN7hbHhurpdNqBhPAK6A5fygRkR8Mf6JyGS/BKzr7iov37TNzpbBbyR7sdSXqEJ6IP8eLKFWXfiz1EAyOUNjFCN71tunJCJd3WLxPWlBLBurMXV7GfTkMLF5bTLsACzbSQMwm0P/ekeQWM0lFZTSTrPKbRyq3clEJ43Ip/GMCe8mRNChIZ6feX8HpItkwiqtq59PhgDIfKptzkUMTRoiarQH0eJgH7LeaPgcBEiBn/rlnaCwzsVIKCuW79TLb8eiW5P167bfy6ClzuY741Mod/VixIGRKGMYwuaYjCZ5VJuY8oY+GeKxm8OC5lcjBr/fGF9qjOzzebS0N7P7SLzaUy2wR1R7Bss9+xbh1uMGYK9ViAS8SFgn2hszx9UQjwx3mWzayIUv6OXEw+3v39PcWzT6Suw0M7BPicuarIsaiWoEpk9Mlxg753wP5OWBMBZNGaRAE7p1mLaT5l1Dtu1YZj/MTsjIO+1m7iIh/mxKmjZdGnwYO4ePQYEQhyFrU0OLiZRB9vQuTvuUM8TOuGLFEW7z6Xi37u76f+WQsbI+2K/kICIPuUQrX+WSvcWvyfpBj+UNsAD3c9+BQyprwG2HriM/5mC+VqmvQlWGvd6JoVv+bQC2/+bknhxjN6Ds+31GSS024e3UCVZ5hvrTU9PIVAy/hxq1L5FarNSeT4It3+6ct+2mwvTEXKEKgot9QOfYUzcXpIvq6WUMfaRXscs+BBEBMIN2uRBi8/I31UUjB1sp45SmT66zMa39UQ5Dl1Sfcllm8/Y8Lsh1GfzPKwFLV5uEJmHeC27DLc85xbB2eGrsyaCgkg9LF+IKqhW2jj1k8T7/lAMNhLa2M3yMrF79z6sD+uPwrQsjLNnGiZ2kvE3fOZWf26KMLIkn2FwSRwwnrhN83+3EioMGYdf0WI4Es+7s797oO1XKDvLPd1L2SRPQLJxlbQEVzOt9efNawiIP5Ix9+maLluPWnJaROWgPM/FmK5o7DMPeN7BFcC7l4h/dLT2bFp9wCD1FmHOv/AXEpzZPFt6oBfnltRENI7i+14KExIqjdWZvYpPXh7srIScpg9I7aC4QeDREQsS+b6Y1iKd3JnNOHGq29woLXfAovoHMqohSWtguVuoIB0+lDEs+913UKN3NHGCQ4Zel0g+Qp3s0yvQ9z6D2CFXz8b1bUQerXngXO1ZkOOedxUU6UMr1vbFz92U26q4OX/36iSHJGQzfP+cqcsvxI50GIuKKhrzILV3nFdeJSYtKyFAjmobYe7JFwo6X8+FTHTGrEB085j3wNiABaGe/CN+Oww5WIioEA+y+yU+Zqb30AVDFaB6KTgNPhONTPBUePgReJB+pCTzzeaUMJp79w4wYH/GcIpMqW/byn828tYk= </div>
       
     </div>
     
@@ -480,8 +503,8 @@
             
             
             
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
+            
+            
             
              friends: "#js-friends a", 
              socail: ".social a" 
